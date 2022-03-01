@@ -107,7 +107,7 @@ class RabbitSocket(object):
         )
 
     def sendall(self, data):
-        msg = amqp.Message(data, delivery_mode=2)
+        msg = amqp.Message(data, delivery_mode=1)
         self.channel.basic_publish(
             msg, exchange=self.exchange, routing_key=self.routing_key
         )
