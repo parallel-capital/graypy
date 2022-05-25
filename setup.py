@@ -83,7 +83,7 @@ setup(
         "amqplib>=1.0.2,<2.0.0",
     ],
     extras_require={
-        "amqp": ["amqplib @ https://github.com/parallel-capital/py-amqplib.git@master#egg=amqplib"],
+        "amqp": ["amqplib @ https://github.com/parallel-capital/py-amqplib.git#egg=amqplib"],
         "docs": [
             "sphinx>=2.1.2,<3.0.0",
             "sphinx_rtd_theme>=0.4.3,<1.0.0",
